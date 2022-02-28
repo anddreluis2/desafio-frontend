@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Link, Route, Routes, useNavigate } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import './App.scss'
-import { characterInfo } from './pages/characterInfo'
-import { Header } from './components/Header'
-import { Cards } from './components/Cards'
+import { CharacterInfo } from './pages/CharacterInfo/CharacterInfo'
+import { Home } from './components/Home'
+import { Error } from './pages/ErrorPage/Error'
 
 
 function App() {
 
-
   return (
     <Router>
-      <Header />
-       <Cards />
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/character/:id' element={<CharacterInfo />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
     </Router>
-
   )
 }
 export default App
