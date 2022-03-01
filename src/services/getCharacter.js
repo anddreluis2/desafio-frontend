@@ -6,6 +6,7 @@ export async function getCharacter(params) {
         return response.data.results.slice(0, 5)
     } else {
         const response = await api.get(`character/${params}`)
-        return response.data.results
+        console.log(response.data)
+        return response.data
     }
 }

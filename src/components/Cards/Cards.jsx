@@ -16,7 +16,7 @@ export function Cards() {
         <div className={style.cards}>
             {char.map(resp => {
                 return (
-                    <Link to={`/character/${resp.name}`} key={resp.id}>
+                    <Link to={`/character/${resp.id}`} key={resp.id}>
                         <div className={style.card} >
                             <img src={resp.image} />
                             <div className={style.cardname}>

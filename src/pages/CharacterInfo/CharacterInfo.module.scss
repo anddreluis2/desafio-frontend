@@ -2,34 +2,41 @@
     width: 450px;
     margin: 10px;
     padding: 10px;
-}
-
-.logo:hover{
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
 .container {
-    width: 700px;
+    width: 600px;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-direction: row;
-    border: solid 2px red;
 }
 
 .cartao{
+    $avatar: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
     border: solid 2px #B2B2B2;
     border-radius: 6px;
     background-color: #193840;
-    width: 210px;
-    height: 210px;
-    display: flex;
+    width: $avatar;
+    height: $avatar;
+
+    img {
+        width: $avatar - 20px;
+        border-radius: 6px;
+    }
 }
 
 .info {
+    margin-right: 0px;
+    display: flex;
     width: 45%;
     margin: 0 auto;
-    border: solid 1px #fff;
 }
 
