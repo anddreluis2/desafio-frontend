@@ -1,5 +1,35 @@
-.teste {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo img{
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
 }
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.container {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+    border: solid 2px red;
+}
+
+.cartao{
+    border: solid 2px #B2B2B2;
+    border-radius: 6px;
+    background-color: #193840;
+    width: 210px;
+    height: 210px;
+    display: flex;
+}
+
+.info {
+    width: 45%;
+    margin: 0 auto;
+    border: solid 1px #fff;
+}
+
