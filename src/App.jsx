@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import './App.scss'
 import { CharacterInfo } from './pages/CharacterInfo/CharacterInfo'
-import { Home } from './components/Home'
+import { Home } from './pages/Home/Home'
 import { Error } from './pages/ErrorPage/Error'
 
 
