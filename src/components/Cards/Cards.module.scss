@@ -1,4 +1,5 @@
 .cards {
+    max-width: 1300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,7 +9,7 @@
     border: solid 2px #C0DE44;
     border-radius: 6px;
     background-color: #42B4CA;
-    width: 210px;
+    width: 105%;
     display: flex;
     flex-direction: column;
     img{
@@ -24,6 +25,7 @@
     background-color: #2D8697;
     transition: 500ms;
     cursor: pointer;
+    
     .card-name {
       background-color: #42B4CA;
       transition: 500ms;

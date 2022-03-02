@@ -14,20 +14,25 @@ export function CharacterInfo() {
     )
     return (
         <>
-            <Link to='/'>
-                <div className={style.logo}>
-                    <img src='../assets/img/Rick_and_Morty_logo.svg' />
-                </div>
-            </Link>
+            <div className={style.logo}>
+                <Link to='/'>
+                    <div className={style.header}>
+                        <img src="../../assets/img/JERRY.png"></img>
+                        <div><b>VOLTAR</b></div>
+                    </div>
+                </Link>
+            </div>
             <div className={style.container} >
                 <div className={style.cartao}><img src={info.image} /> </div>
 
-                <div className={style.info}>
-                    Nome: {info.name} <br />
-                    Status: {info.status} <br />
-                    Especie: {info.species} <br />
-                    Gênero: {info.gender} <br />
-                </div>
+                <ul className={style.info}>
+                    <li>Name: {info.name} </li>
+                    <li>Status: {info.status} </li>
+                    <li>Specie: {info.species} </li>
+                    <li>Gender: {info.gender} </li>
+                    <li>Origin: {info?.origin?.name} </li>
+                    <li>Location: {info?.origin?.name} </li>
+                </ul>
             </div>
         </>
     )
