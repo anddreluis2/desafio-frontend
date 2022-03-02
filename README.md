@@ -18,7 +18,10 @@ Para instalar o projeto, siga estas etapas:
 
 Windows:
 ```
-<comando_de_instalação>
+Instalação de pacotes
+
+Ao abrir a pasta do projeto, no terminal digitar:
+ 
 yarn add .
 npm install .
 
